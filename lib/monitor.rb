@@ -68,14 +68,14 @@
 #     alias :old_unshift :unshift
 #
 #     def shift(n=1)
-#       self.synchronize do
-#         self.old_shift(n)
+#       synchronize do
+#         old_shift(n)
 #       end
 #     end
 #
 #     def unshift(item)
-#       self.synchronize do
-#         self.old_unshift(item)
+#       synchronize do
+#         old_unshift(item)
 #       end
 #     end
 #
